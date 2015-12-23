@@ -10,21 +10,21 @@ import UIKit
 
 class MusicView: UIView {
 
+    /* Criação da View para utilizar depois */
+    
     @IBOutlet var artworkImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var artistLabel: UILabel!
     @IBOutlet var genreLabel: UILabel!
     
+    /* Criação da função que preenche a view
+        sem deixar grande a tableview */
     func addDataToMusicView(album: Album) {
         
         artworkImageView.image = UIImage(data: NSData(contentsOfURL: NSURL(string: album.artworkURL!)!)!)
         titleLabel.text = album.title
         artistLabel.text = album.artist
         genreLabel.text = album.genre
-        
-        
-        
-        
         
     }
     

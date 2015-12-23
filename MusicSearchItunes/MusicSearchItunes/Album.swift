@@ -9,13 +9,16 @@
 import UIKit
 
 class Album: NSObject {
+    
+    /* Cria os atributos */
     var title: String!
     var artist: String!
     var genre: String!
     var artworkURL: String!
     
+    /* Inicializa o objeto */
     init(title: String, artist: String, genre: String, artworkURL: String) {
-        
+        /* Chama o NSObject */
         super.init()
         
         self.title = title
