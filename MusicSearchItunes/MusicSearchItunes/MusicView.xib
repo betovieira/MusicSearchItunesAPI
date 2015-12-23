@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MusicView" customModule="MusicSearchItunes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crr-d6-Y0N">
+                    <rect key="frame" x="37" y="48" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Anj-Tv-njb"/>
+                        <constraint firstAttribute="width" constant="100" id="v0S-cP-CfA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iir-wa-puw">
+                    <rect key="frame" x="165" y="66" width="399" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="uQy-Dx-bTc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccQ-V8-3nb">
+                    <rect key="frame" x="37" y="172" width="47" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="47" id="LU0-qk-ABa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIp-H6-NUr">
+                    <rect key="frame" x="37" y="202" width="51" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="51" id="Aqk-TS-64d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYk-mU-Qps">
+                    <rect key="frame" x="96" y="172" width="468" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyf-P0-e1U">
+                    <rect key="frame" x="96" y="202" width="468" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Kyf-P0-e1U" firstAttribute="leading" secondItem="vIp-H6-NUr" secondAttribute="trailing" constant="8" id="2bP-u3-dl4"/>
+                <constraint firstItem="jYk-mU-Qps" firstAttribute="leading" secondItem="ccQ-V8-3nb" secondAttribute="trailing" constant="12" id="4gE-kC-Eeh"/>
+                <constraint firstItem="Iir-wa-puw" firstAttribute="leading" secondItem="crr-d6-Y0N" secondAttribute="trailing" constant="28" id="5ga-Ry-QMK"/>
+                <constraint firstItem="jYk-mU-Qps" firstAttribute="top" secondItem="crr-d6-Y0N" secondAttribute="bottom" constant="24" id="6Wt-tv-sf7"/>
+                <constraint firstItem="crr-d6-Y0N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="BeD-p5-faG"/>
+                <constraint firstItem="vIp-H6-NUr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="Kpy-wg-9AA"/>
+                <constraint firstAttribute="trailing" secondItem="Kyf-P0-e1U" secondAttribute="trailing" constant="36" id="Mju-9p-gR8"/>
+                <constraint firstItem="ccQ-V8-3nb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="37" id="PSY-oa-hA0"/>
+                <constraint firstItem="Kyf-P0-e1U" firstAttribute="top" secondItem="jYk-mU-Qps" secondAttribute="bottom" constant="9" id="afo-Tu-JAX"/>
+                <constraint firstAttribute="trailing" secondItem="Iir-wa-puw" secondAttribute="trailing" constant="36" id="by7-Di-C5S"/>
+                <constraint firstAttribute="trailing" secondItem="jYk-mU-Qps" secondAttribute="trailing" constant="36" id="eO6-aK-8Mc"/>
+                <constraint firstItem="crr-d6-Y0N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="48" id="eZ4-yL-mUS"/>
+                <constraint firstItem="ccQ-V8-3nb" firstAttribute="top" secondItem="crr-d6-Y0N" secondAttribute="bottom" constant="24" id="pld-lS-onf"/>
+                <constraint firstItem="Iir-wa-puw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="66" id="sgO-v4-CEg"/>
+                <constraint firstItem="vIp-H6-NUr" firstAttribute="top" secondItem="ccQ-V8-3nb" secondAttribute="bottom" constant="9" id="v7u-ca-v9v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="artistLabel" destination="jYk-mU-Qps" id="8zY-W8-IEQ"/>
+                <outlet property="artworkImageView" destination="crr-d6-Y0N" id="R1t-l5-5GA"/>
+                <outlet property="genreLabel" destination="Kyf-P0-e1U" id="0fF-LO-cBF"/>
+                <outlet property="titleLabel" destination="Iir-wa-puw" id="RtM-Tr-AiV"/>
+            </connections>
+            <point key="canvasLocation" x="411" y="745"/>
+        </view>
+    </objects>
+</document>

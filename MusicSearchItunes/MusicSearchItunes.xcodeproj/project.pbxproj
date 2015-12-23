@@ -14,6 +14,10 @@
 		DB9753BB1C29B3F500634D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9753B91C29B3F500634D35 /* LaunchScreen.storyboard */; };
 		DB9753C61C29B3F500634D35 /* MusicSearchItunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9753C51C29B3F500634D35 /* MusicSearchItunesTests.swift */; };
 		DB9753D11C29B3F500634D35 /* MusicSearchItunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9753D01C29B3F500634D35 /* MusicSearchItunesUITests.swift */; };
+		DB9753DF1C29B43500634D35 /* ItunesConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9753DE1C29B43500634D35 /* ItunesConnection.swift */; };
+		DB9753E21C29B71A00634D35 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9753E11C29B71A00634D35 /* Album.swift */; };
+		DB9753E41C29CB3000634D35 /* MusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9753E31C29CB3000634D35 /* MusicView.xib */; };
+		DB9753E71C29D86600634D35 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9753E61C29D86600634D35 /* MusicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		DB9753CC1C29B3F500634D35 /* MusicSearchItunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicSearchItunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9753D01C29B3F500634D35 /* MusicSearchItunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchItunesUITests.swift; sourceTree = "<group>"; };
 		DB9753D21C29B3F500634D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9753DE1C29B43500634D35 /* ItunesConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesConnection.swift; sourceTree = "<group>"; };
+		DB9753E11C29B71A00634D35 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		DB9753E31C29CB3000634D35 /* MusicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicView.xib; sourceTree = "<group>"; };
+		DB9753E61C29D86600634D35 /* MusicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,11 @@
 		DB9753AF1C29B3F500634D35 /* MusicSearchItunes */ = {
 			isa = PBXGroup;
 			children = (
+				DB9753E51C29CB3700634D35 /* View */,
+				DB9753E01C29B70800634D35 /* Model */,
 				DB9753B01C29B3F500634D35 /* AppDelegate.swift */,
-				DB9753B21C29B3F500634D35 /* ViewController.swift */,
+				DB9753DE1C29B43500634D35 /* ItunesConnection.swift */,
+				DB9753E81C2ACA9300634D35 /* Controller */,
 				DB9753B41C29B3F500634D35 /* Main.storyboard */,
 				DB9753B71C29B3F500634D35 /* Assets.xcassets */,
 				DB9753B91C29B3F500634D35 /* LaunchScreen.storyboard */,
@@ -123,6 +134,31 @@
 				DB9753D21C29B3F500634D35 /* Info.plist */,
 			);
 			path = MusicSearchItunesUITests;
+			sourceTree = "<group>";
+		};
+		DB9753E01C29B70800634D35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB9753E11C29B71A00634D35 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DB9753E51C29CB3700634D35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB9753E31C29CB3000634D35 /* MusicView.xib */,
+				DB9753E61C29D86600634D35 /* MusicView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DB9753E81C2ACA9300634D35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB9753B21C29B3F500634D35 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +267,7 @@
 			files = (
 				DB9753BB1C29B3F500634D35 /* LaunchScreen.storyboard in Resources */,
 				DB9753B81C29B3F500634D35 /* Assets.xcassets in Resources */,
+				DB9753E41C29CB3000634D35 /* MusicView.xib in Resources */,
 				DB9753B61C29B3F500634D35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +295,9 @@
 			files = (
 				DB9753B31C29B3F500634D35 /* ViewController.swift in Sources */,
 				DB9753B11C29B3F500634D35 /* AppDelegate.swift in Sources */,
+				DB9753E71C29D86600634D35 /* MusicView.swift in Sources */,
+				DB9753DF1C29B43500634D35 /* ItunesConnection.swift in Sources */,
+				DB9753E21C29B71A00634D35 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
